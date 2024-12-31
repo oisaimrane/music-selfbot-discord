@@ -14,7 +14,7 @@ if (!process.env.TOKEN){
     process.exit(1);
   };
 } else{
-  if (!process.env.PREFIX) process.env.PREFIX="--";
+  if (!process.env.PREFIX) process.env.PREFIX="!";
   global.config = {'token': process.env.TOKEN, 'prefix': process.env.PREFIX};
 }
 if (!process.env.ALLOWED){
